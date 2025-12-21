@@ -1,0 +1,69 @@
+.footer{
+    background-color: var(--color5);
+}
+.footer__logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-family: var(--font5);
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-size: 0.8em;
+}
+.footer__logo h2{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.footer__logo strong{
+    font-size: 1.5em;
+}
+.footer__logo img{
+    width: 100px;
+    border-radius: 30px;
+}
+.footer__privacidade{
+    font-family: var(--font2);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+    margin: 10px 0px;
+}
+.footer__privacidade a{
+    color: gray
+}
+.footer__whatsapp{
+    font-family: var(--font1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+.footer__whatsapp a, .footer__whatsapp i{
+    color: lime;
+}
+@media screen and (min-width: 768px) {
+    .footer{
+        font-size: 120%;
+    }
+    .footer__logo{
+        justify-content: center;
+        gap: 20px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 25vh;
+        align-items: center;
+    }
+    
+    
+}

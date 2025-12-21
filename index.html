@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação Pederneiras</title>
+    <link rel="stylesheet" href="styles/reset.css">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Doto:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
+
+    <script type="text/javascript">
+              window.onload = function(){
+              (function(d, script) {
+              script = d.createElement('script');
+              script.type = 'text/javascript';
+              script.async = true;
+              script.src = 'https://w.app/widget-v1/X30N9H.js';
+              d.getElementsByTagName('head')[0].appendChild(script);
+              }(document));
+              };
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__img-container">
+            <img src="img/Precisando formatar seu Computador ou Notebook.png" alt="Logo Formatação Pederneiras">
+            <h2><strong>Formatação</strong> Pederneiras</h2>
+        </div>
+        <div class="header__carrossel">
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#formatacao">Formatação</a>
+            <a href="#sobre_nos">Sobre Nós</a>
+        </div>
+        <div class="header__checkbox">
+            <input type="checkbox" name="menu" id="menu" class="header__botao">
+            <label for="menu" class="header__rotulo"><span class="header__menu-hamburguer header__img"></span></label>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="nav__menu-list">
+            <ul class="menu-list">
+                <li class="menu-list__item">
+                    <a href="#inicio" class="menu-list__link">Início</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#servicos" class="menu-list__link">Serviços</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#formatacao" class="menu-list__link">Formatação</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#sobre_nos" class="menu-list__link">Sobre nós</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main" id="inicio">
+        <section class="section1">
+            <video autoplay muted loop playsinline>
+                <source src="img/27725-365890983_small.mp4" type="video/mp4">
+            </video>
+            <div class="section1__texto1">
+                <h2>Precisando <strong>formatar seu computador ou notebook?</strong></h2>
+                <p><i class="fa-solid fa-arrow-down"></i> Conte Comigo!</p>
+            </div>
+            <div class="section1__texto2">
+                <p>Se você quer limpar seu <strong>computador/notebook</strong> e deixá-lo mais rápido, <strong>formatar</strong> é uma ótima opção</p>
+            </div>
+            <div class="section1__whatszapp-container">
+                <div class="section1__logo-texto">
+                    <div class="section1__texto3">
+                        <h3>Ligue ou Contate via Whatszapp</h3>
+                        <div class="section1__logo-whatszapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <p>+55 (14) 99723-4688</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section1__button-whatszapp">
+                    <a class="button-whatszapp" href="https://w.app/formatacaopederneiras">Contate no Whatszapp</a>
+                </div>
+            </div>
+        </section>
+        <section class="section2" id="servicos">
+            <h2>Serviços</h2>
+            <div class="section2__servicos">
+                <div class="servicos__carrossel">
+                    <button onclick="mostrarServico1()" class="ativo" id="servico1-button">Formatação <span>Simples</span></button>
+                    <button onclick="mostrarServico2()" class="" id="servico2-button">Formatação <span>Backup</span></button>
+                </div>
+                <div class="servicos__container">
+                    <div class="servicos">
+                        <div class="servico1 ativo">
+                            <h3>R$50</h3>
+                            <p>Formatação completa da máquina com a instalação do mesmo ou de outro sistema operacional. </p>
+                        </div>
+                        <div class="servico2">
+                            <h3>R$70</h3>
+                            <p>Formatação completa da máquina e backup ou instalação de arquivos/aplicativos solicitados, com a implementação do mesmo ou de outro sistema operacional.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="formatacao"></section>
+        <section class="section3" id="sobre_nos">
+            <h2>Formatação</h2>
+            <details class="section3__texto1">
+                <summary>Oque é a formatação de um computador?</summary>
+                <p>A formatação de um computador é o processo de reinstalar o sistema operacional, removendo vírus, arquivos desnecessários, erros e lentidão acumulados com o tempo. Esse procedimento deixa o computador mais rápido, seguro e organizado, como se estivesse recém-saído de fábrica.</p>
+            </details>
+            <details class="section3__texto2">
+                <summary>Como funciona a formatação?</summary>
+                <p>O processo começa com a verificação do equipamento e, se o cliente desejar, o backup dos arquivos importantes. Em seguida, o sistema antigo é removido e um novo sistema operacional atualizado é instalado, junto com os drivers corretos e programas essenciais.</p>
+            </details>
+            <details class="section3__texto3">
+                <summary>Informações importantes para você</summary>
+                <ul>
+                    <li>🔒 Seus dados são tratados com segurança</li>
+                    <li>💾 Backup opcional de arquivos pessoais</li>
+                    <li>🚀 Melhora significativa no desempenho</li>
+                    <li>🛡️ Remoção de vírus e programas maliciosos</li>
+                    <li>⚙️ Instalação de programas básicos (navegador, apps, etc.)</li>
+                    <li>💬 Suporte e orientação após o serviço</li>
+                </ul>
+            </details>
+        </section>
+        <section class="section4">
+            <h2>Sobre nós</h2>
+            <div class="section4__texto1">
+                <p>Sou uma pessoa muito interessada na área da tecnologia, atualmente faço um curso de desenvolvimento de sistemas pelo SENAI, e busco trabalhar desde já com essa área.</p>
+                <p>O serviço e atendimento é realizado em pederneiras, no Parque da Colina - contate-nos no Whatszapp</p>
+                <p>Futuramente buscamos trabalhar com a criação de sites para empresários e comerciantes, se estiver interessado, contate-nos para saber mais!</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo">
+            <img src="img/Precisando formatar seu Computador ou Notebook.png" alt="Logo Formatação Pederneiras">
+            <h2><strong>Formatação</strong> Pederneiras</h2>
+        </div>
+        
+            <p class="footer__privacidade">
+                © 2025 Formatação Pederneiras — <a href="politica-de-privacidade.html">Política de Privacidade</a>
+            </p>
+            <div class="footer__whatsapp">
+                <p>Fale conosco no <a href="https://w.app/formatacaopederneiras" >Whatszapp</a></p>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

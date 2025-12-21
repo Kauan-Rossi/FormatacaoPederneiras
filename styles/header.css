@@ -1,0 +1,121 @@
+.header{
+    height: 12vh;
+    background-color: var(--cinza1);
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+
+    transform: translateY(-10px);
+    transition: transform 1s ease, background 0.3s ease, all 0.3s ease;
+}
+.header.sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.header__img-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: var(--font5);
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-size: 0.8em;
+}
+.header__img-container strong{
+    font-size: 1.5em;
+}
+.header__img-container img{
+    width: 80px;
+    border-radius: 50px;
+    margin: 5px;
+}
+.header__botao{
+    display: none;
+}
+.header__menu-hamburguer{
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/Menu\ Aberto.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    transition: transform 0.4s ease;
+}
+.header__carrossel{
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    body{
+        font-size: 140%;
+    }
+    .header__img-container img{
+        width: 110px;
+    }
+    .header__img-container strong{
+        display: block;
+    }
+    .header__menu-hamburguer{
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-size: contain;
+    }
+    .header__carrossel{
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 992px) {
+    .header{
+        transform: translateY(-5px);
+        transition: transform 0.5s ease;
+        
+    }
+    .header__carrossel{
+        display: flex;
+        gap: 70px;
+    }
+    .header__carrossel a{
+        color: white;
+        text-decoration: none;
+        font-family: var(--font1);
+        position: relative;
+    }
+    .header__carrossel a::after{
+        text-align: center;
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -205%;
+        width: 150px;
+        height: 3px;
+        background-color: #007bff;
+
+        transform: translateX(-50%) scaleX(0);
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out;
+    }
+    .header.sticky .header__carrossel a::after{
+        bottom: -190%;
+    }
+    .header__carrossel a:hover::after{
+        transform: translateX(-50%) scaleX(1);
+    }
+    .header__carrossel a.hover-bar::after{
+        transform: translateX(-50%) scaleX(1);
+    }
+    .header__img-container img{
+        width: 90px;
+    }
+    .header__menu-hamburguer{
+        display: none;
+    }
+}

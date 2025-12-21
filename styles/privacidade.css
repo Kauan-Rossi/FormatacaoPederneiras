@@ -1,0 +1,68 @@
+.header__privacidade{
+    background-color: var(--color2);
+}
+.main__privacidade{
+    background-color: var(--cinza1);
+}
+.arrow-voltar{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 10px;
+    font-family: var(--font1);
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+.arrow-voltar i{
+    rotate: 90deg;
+}
+.arrow-voltar a{
+    color: var(--color4);
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.section__privacidade{
+    text-align: center;
+    padding: 5px;
+}
+.titulo__privacidade{
+    margin: 20px 5px 30px 5px;
+    color: white;
+}
+.titulo__privacidade h3{
+    color: var(--color2);
+    font-size: 1.9em;
+    font-family: var(--font1);
+    margin-bottom: 10px;
+}
+.titulo__privacidade h4{
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+.titulo__privacidade p{
+    font-size: 1.1em;
+    font-family: var(--font1);
+}
+.topicos__privacidade{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: white;
+    font-size: 1.1em;
+    font-family: monospace;
+}
+.topico__privacidade{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.topico__privacidade h5{
+    font-size: 1.4em;
+    color: var(--color3);
+}
+.carrossel__privacidade a::after{
+    bottom: -200%;
+    background-color: var(--color1);
+}
